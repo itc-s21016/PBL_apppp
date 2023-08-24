@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/jender_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別を選択してください" />
+
+        <ImageView
+            android:id="@+id/otoko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="男性"
+            android:src="@drawable/male_pictogram" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEN" />
+
+        <ImageView
+            android:id="@+id/onna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="女性"
+            android:src="@drawable/female_pictogram" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WOMEN" />
+
+        <Button
+            android:id="@+id/btTouroku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRegisterClick"
+            android:text="登録" />
+    </LinearLayout>
+</FrameLayout>
